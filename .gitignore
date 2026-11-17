@@ -539,3 +539,16 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,aspnetcore,dotnetcore
+# --- Fork IuGommes: arquivos locais/sensíveis ---
+# Segredos: use .env.example como modelo e mantenha o .env só na máquina.
+.env
+# Certificados e chaves gerados por cli/generate-certs.sh (só config.ext e mongo-ca.pem são versionados)
+certificates/*
+!certificates/config.ext
+!certificates/mongo-ca.pem
+# macOS
+.DS_Store
+# Notas de estudo privadas (decisão 2026-11-16: publicar só uma versão final ao fim do curso)
+CLAUDE.md
+docs/
+.claude/
